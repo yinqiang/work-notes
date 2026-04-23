@@ -16,7 +16,7 @@
 ### 安装
 
 ```bash
-npx skills add 你的用户名/work-notes
+npx skills add yinqaing/work-notes
 ```
 
 ### 首次使用
@@ -87,14 +87,4 @@ work-notes/
 └── references/
     ├── work-notes-format.md   # 周志详细格式规范
     └── pmi-format.md          # PMI 月报格式规范
-```
-
-## 安装方式
-
-```bash
-# 从 GitHub 安装
-npx skills add https://github.com/你的用户名/work-notes
-
-# 或克隆到本地
-git clone https://github.com/你的用户名/work-notes.git
 ```
