@@ -27,3 +27,28 @@
 - Non-project entries: plain text, e.g., `- 周会：xxx`
 - Images stored in `images/`, naming `YYYYMMDDHHMMSS_description.png`
 - Todo items use `todo.md`, format `- [ ] 内容`
+
+## Pre-Write Date Check (Required)
+
+Before writing/editing any work log entry, confirm today's real date:
+
+- Run `date +"%Y-%m-%d %A"` or read the environment's Today's date.
+- Convert relative phrases ("today", "yesterday", "记录一下") to absolute dates before deciding which `YYYY-MM-WN.md` and which weekday section to use.
+- When crossing week (Monday) or month boundaries, verify whether a new `YYYY-MM-WN.md` file is needed instead of appending to the previous week.
+- If the user hasn't specified a date, default to the current real date; ask once if ambiguous.
+
+## Weekly Summary Format (Three sections, one sentence each)
+
+When the user asks for a weekly summary organized by 需求/问题、产出/成果、预期/收益:
+
+```markdown
+**需求/问题：** [one sentence — core problems/requirements this week]
+
+**产出/成果：** [one sentence — key deliverables this week]
+
+**预期/收益：** [one sentence — expected benefits from this work]
+```
+
+- One sentence per section, no enumeration
+- Expand only if the user explicitly asks for more detail
+
