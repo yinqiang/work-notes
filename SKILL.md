@@ -21,6 +21,26 @@ description: 工作日志助手 — 自动处理每日 git 提交记录录入、
 - 周日志：`YYYY-MM-WN.md`（如 `2026-04-W4.md`），WN 为该月第几周
 - PMI 月报：`PMI-YYYY-M.DD~M.DD.md`（如 `PMI-2026-3.15~4.14.md`）
 
+### 目录结构
+
+工作日志目录按文档类型分文件夹归类，避免所有文件平铺在一起：
+
+```
+<work-notes>/
+├── weekly/          # 周工作日志 (YYYY-MM-WN.md)
+├── weekly-reports/  # 周报 (Weekly-*.md)
+├── pmi/             # 月度 PMI 报告 (PMI-*.md)
+├── interns/         # 实习生任务独立文档 (Intern-Tasks.md)
+├── projects/        # 项目相关散文档 (如 TSthPCGUnity Layouts.md)
+└── todo.md          # 待办清单，留在根目录便于快速访问
+```
+
+规则：
+- 周日志统一放 `weekly/`，周报放 `weekly-reports/`，PMI 月报放 `pmi/`
+- 实习生任务单独成文档放 `interns/`，不混入周工作记录
+- 项目级散文档（非周志/周报/PMI）放 `projects/`
+- `todo.md` 保留在根目录，不进子文件夹
+
 ### 周日志内容结构
 
 ```markdown
